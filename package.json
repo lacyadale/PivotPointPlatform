@@ -21,8 +21,7 @@
     "test:server": "cd server && npm test",
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "cd client && npm run lint",
-    "lint:server": "cd server && npm run lint",
-    "setup": "./scripts/setup.sh"
+    "lint:server": "cd server && npm run lint"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
