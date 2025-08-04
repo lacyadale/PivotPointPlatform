@@ -1,25 +1,15 @@
-import { Router } from 'wouter';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AppRoutes } from './lib/routes';
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 5 * 60 * 1000, // 5 minutes
-      refetchOnWindowFocus: false,
-    },
-  },
-});
+// client/src/App.tsx
+import React from 'react';
+import UnifiedPlatformLayout from './components/layout/UnifiedNavigation';
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Router>
-        <div className="min-h-screen bg-gray-50">
-          <AppRoutes />
-        </div>
-      </Router>
-    </QueryClientProvider>
+    <UnifiedPlatformLayout>
+      <div className="p-6">
+        <h1 className="text-2xl font-bold">Welcome to PivotPoint Platform</h1>
+        <p>Your unified psychology and trading assessment platform.</p>
+      </div>
+    </UnifiedPlatformLayout>
   );
 }
 

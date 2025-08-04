@@ -24,8 +24,18 @@
     "lint:server": "cd server && npm run lint"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.0",
     "eslint": "^8.45.0",
-    "prettier": "^3.0.0"
+    "postcss": "^8.5.6",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.536.0",
+    "tailwind-merge": "^3.3.1",
+    "wouter": "^3.7.1"
   }
 }
